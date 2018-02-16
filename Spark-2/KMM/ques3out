@@ -1,0 +1,38 @@
+ first accuracy: using kmm
+ second accuracy: without kmm
+
+// For trainData1.arff and testData1.arff
+
+ ACC:87%, Total:80/80 with positive 70
+ ACC:88%, Total:80/80 with positive 71
+
+// For trainData2.arff and testData2.arff
+
+ ACC:86%, Total:80/80 with positive 69
+ ACC:86%, Total:80/80 with positive 69
+
+// For trainData3.arff and testData3.arff
+
+ ACC:87%, Total:80/80 with positive 70
+ ACC:93%, Total:80/80 with positive 75
+
+// For trainData4.arff and testData4.arff
+
+ ACC:75%, Total:400/400 with positive 303
+ ACC:84%, Total:400/400 with positive 336
+
+// For trainData5.arff and testData5.arff
+
+ ACC:75%, Total:400/400 with positive 303
+ ACC:85%, Total:400/400 with positive 343
+
+
+// For trainData6.arff and testData6.arff
+
+ ACC:75%, Total:400/400 with positive 301
+ ACC:80%, Total:400/400 with positive 320\
+
+
+SVM classifier is chosen as it is one of the strongest classifier for the given dataset. Maximum-margin support vector machines generate a hyperplane which produces the clearest separation between positive and negative feature vectors. These SVMs are effective when datasets are large. However, when few training samples are available, the hyperplane is easily influenced by outliers that are geometrically located in the opposite class. Thus, SVM is chosen where weights feature vectors to reflect the local density of support vectors and quantifies classification uncertainty in terms of the local classification capability of each training sample. 
+
+

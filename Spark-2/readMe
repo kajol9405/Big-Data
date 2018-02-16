@@ -1,0 +1,28 @@
+Question: 1
+
+To run write command:  spark-shell -i kmeans.scala
+check the clusters and respective movies in them
+
+
+Question: 2
+
+To run write command:  spark-shell -i Rating.scala
+check the accuracy printed
+
+
+Question: 3
+
+Download the files and rename arff pairs as trainData1, testData1, trainData2, testData2 etc and in main method change the name of the particular file to find its accuracy
+
+Then run the code using the following command
+	spark-submit ques3.py 10
+
+Question: 4
+
+download eclipse ide for Scala and open code in it
+
+right click on question4.scala - run configuration then arguments
+in arguments give the path to output directory and click Run
+The analysis files will be generated in the output directory
+
+change the twitter app configurations of yours

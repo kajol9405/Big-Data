@@ -1,0 +1,70 @@
+
+IDE : eclipse
+VirtualBox: cloudera
+
+Files Included:
+
+Q1: Mutualfriends.java (src code), output file, mfs.jar 
+Q2: TopTenMutualfriends.java (src code), SortMapFunction.java, output file, ttmfs.jar 
+Q3: TopTenBusiness.java (src code), SortMapFunction, output file, ttb.jar 
+Q4: BusinessesinPaloAlto.java (src code), output file, palo.jar 
+
+- Place all java files in same package.
+- Place below files in hadoop
+   1) business.csv 
+   2) review.csv 
+   3) user.csv 
+   4) soc-LiveJournal1Adj.txt
+
+Ques-1:
+    hadoop jar MainClass jarFile inputFilePath outputFilePath
+    where,
+    MainClass- main class name, here MutualFriends
+	jarFile- jar file, here mfs.jar
+	inputFilePath- The path of the input file on your hadoop system
+	outputFilePath- The path of output file to be created on the hadoop system
+
+    hdfs dfs -get /outputFilePath		
+    -- The above command will generate the output of the file.
+
+    Note : I have hard-coded output for required 5 pairs but if you want to run from command line then un-comment the code mentioned in MutualFriends.java
+
+Ques-2:
+    hadoop jar MainClass jarFile inputFilePath outputFilePath
+    where,
+    MainClass- main class name, here TopTenMutualFriends
+	jarFile- jar file, here ttmfs.jar
+	inputFilePath- The path of the input file on your hadoop system
+	outputFilePath- The path of output file to be created on the hadoop system
+
+    hdfs dfs -get /outputFilePath		
+    -- The above command will generate the output of the file.
+
+Ques-3:
+    hadoop jar MainClass jarFile inputFilePath1 inputFilePath2 intermediateFilePath outputFilePath
+
+    where,
+    MainClass- main class name, here TopTenBusiness
+	jarFile- jar file, here ttb.jar
+	inputFilePath- The path of the first input file on hadoop system (reviews.txt)
+	inputFilePath- The path of the second input file on hadoop system (business.txt)
+	intermediatePath-The path of the intermediate on hadoop system
+	outputFilePath- The path of output file to be created on the hadoop system
+
+    hdfs dfs -get /outputFilePath		
+    -- The above command will generate the output of the file.
+
+Ques-4:
+    hadoop jar MainClass jarFile inputFilePath1 inputFilePath2 outputFilePath
+
+    where,
+    MainClass- main class name, here BusinessesinPaloAlto
+	jarFile- jar file, here palo.jar
+	inputFilePath- The path of the first input file on hadoop system (reviews.txt)
+	inputFilePath- The path of the second input file on hadoop system (business.txt)
+	outputFilePath- The path of output file to be created on the hadoop system
+
+    hdfs dfs -get /outputFilePath		
+    -- The above command will generate the output of the file.
+
+
